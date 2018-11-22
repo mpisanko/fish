@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 # Path
-set -x PATH /usr/local/arcanist/bin /usr/local/bin /usr/local/sbin /usr/bin /usr/sbin /bin /sbin /opt/X11/bin
+set -x PATH /usr/local/bin /usr/local/sbin /usr/bin /usr/sbin /bin /sbin "$HOME/bin"
 
 set -x TERM 'xterm-256color'
 
@@ -21,13 +21,8 @@ set -x LC_CTYPE $LANG
 set -x LC_MESSAGES $LANG
 set -x LC_COLLATE C
 
-# Python
-if [ -f ~/.config/pythonstartup.py ]
-   set -x PYTHONSTARTUP ~/.config/pythonstartup.py
-end
-
 # Aliases
-alias l ll
+alias l="ls -al"
 
 # direnv
 if which -s direnv
@@ -36,3 +31,4 @@ end
 
 # nix
 eval (~/.config/fish/misc/nix_fish_env.sh) 2>/dev/null
+
