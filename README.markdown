@@ -2,15 +2,13 @@
 
 ### Overview
 
-This is the [fish](http://fishshell.com) configuration I'm using on my Mac (currently under Yosemite). A lot of it is going to be specific to my own workflows, but you might find it useful, too.
-
-You can see my old bash dotfiles [here](https://github.com/cspickert/dotfiles).
+This is the [fish](http://fishshell.com) configuration with nix support. Uses [fisher](https://github.com/jorgebucaran/fisher) for installing packages. My preference is installing [breeze](https://github.com/shinriyo/breeze): `fisher add shinriyo/breeze`
 
 ### Installing
 
 ```lang=shell
 mkdir -p ~/.config
-git clone https://github.com/cspickert/fish.git ~/.config/fish
+git clone https://github.com/mpisanko/fish.git ~/.config/fish
 ```
 
 ### Useful Links
