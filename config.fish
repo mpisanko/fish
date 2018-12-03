@@ -10,7 +10,7 @@ set -x GREP_OPTIONS '--color=auto'
 set -x GREP_COLOR '3;33'
 
 # Editor/pager
-set -x EDITOR 'emacs'
+set -x EDITOR 'vi'
 set -x PAGER 'less'
 
 # Language
